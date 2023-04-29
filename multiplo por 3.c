@@ -11,6 +11,6 @@ main(){
  }
 else {
     printf("o numero %d nao e multiplo por 3", num);
-}
+ }
 return 0;
 }
