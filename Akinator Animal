@@ -69,11 +69,11 @@ int main() {
                 }
             }
         }
-        }
+    }
     
          if (mamiferos == 0) {
-            printf("O seu animal e uma Ave?");
-            scanf("%d",aves);
+            printf("O seu animal e uma Ave?\n");
+            scanf("%d",&aves);
         
 
           if (mamiferos == 0 && aves == 1){
@@ -109,29 +109,30 @@ int main() {
           }
         }
     }
-        if (mamiferos == 0 && aves == 0){
-        printf("O seu animal e um reptil?");
-        scanf("%d",repteis);
-        }
-      if (mamiferos == 0 && aves == 0 && repteis==1){
-       printf("O seu animal tem casco");
-       scanf("%d",casco);
+        if (aves == 0){
+        printf("O seu animal e um reptil?\n");
+        scanf("%d",&repteis);
+    
+      if (repteis==1){
+       printf("O seu animal tem casco?");
+       scanf("%d",&casco);
         if (casco==1){
         printf("O seu animal e uma Tartaruga.");
       }
-      if (repteis==1 && casco==0){
+      if (casco==0){
         printf("O seu animal e um carnivoro?");
-        scanf("%d",repteiscarnivoros);
+        scanf("%d",&repteiscarnivoros);
         if (repteiscarnivoros==1){
             printf("O seu animal e um Crocodilo.");
             if (repteiscarnivoros==0){
                 printf("O seu animal nao tem patas?");
-                scanf("%d",sempatas);
+                scanf("%d",&sempatas);
                 if (sempatas==1){
-                    printf("O seu animal e uma Cobra.");
+                    printf("O seu animal e uma Cobra");
                 }
             }
         }
       }
     }
- }
+  }
+}   
